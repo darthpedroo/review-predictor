@@ -13,7 +13,7 @@ const response = ref({
 async function handleSubmit(review) {
   try {
     console.log("REVIEW: ", review);
-    const res = await axios.get(`http://porky.pythonanywhere.com/review//${review}`);
+    const res = await axios.get(`https://porky.pythonanywhere.com/review//${review}`);
     response.value.response = res.data; // Correctly set the response value
   } catch (error) {
     console.error(error);
